@@ -1,19 +1,19 @@
-// add two numbers.
+  // add two numbers.
 
-#include <iostream>
+  #include <iostream>
 
-using namespace std;
+  using namespace std;
 
-int main()
-{
-  int num1, num2, sum;
+  int main()
+  {
+    int num1, num2, sum;
 
-  cout << "enter two value : ";
-  cin >> num1 >> num2;
+    cout << "enter two value : ";
+    cin >> num1 >> num2;
 
-  sum = num1 + num2;
+    sum = num1 + num2;
 
-  cout << "the sum  is :" << sum << endl;
+    cout << "the sum  is :" << sum << endl;
 
-  return 0;
-}
+    return 0;
+  }

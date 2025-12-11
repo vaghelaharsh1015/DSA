@@ -37,13 +37,13 @@ int main()
   k = k % n; // k < n
 
   // step 1
-  reverse(arr, 0, n - 1); // 0 - 4 //
+  reverse(arr, 0, n - 1);
 
   // step 2
-  reverse(arr, 0, k - 1); // 0 - 2 // [50] [40] = [40] [50]
+  reverse(arr, 0, k - 1);
 
   // step
-  reverse(arr, k, n - 1); // 3 - 3 // 30 40 50 10 20
+  reverse(arr, k, n - 1);
 
   cout << "Array after rotation: ";
 
