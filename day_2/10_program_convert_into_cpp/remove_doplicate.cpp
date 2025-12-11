@@ -1,33 +1,29 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
 
-    int arr[5];
-    int flag = 1;
+    int arr[100]; 
 
-    int start = 0, end = n - 1;
+    cout << "Enter " << n << " elements:\n";
+    for(int i = 0; i < n; i++)
+        cin >> arr[i];
 
-    while (start < end)
-    {
-        if (arr[start] == arr[end])
-        {
-            flag = 0;
-            break;
+  
+    for(int i = 0; i < n; i++) {
+        for(int j = i + 1; j < n; j++) {
+            if(arr[i] == arr[j]) {
+                arr[j] = 0; 
+            }
         }
-        start++;
-        end--;
     }
 
-    if (flag == 1)
-        cout << "Palindrome\n";
-    else
-    {
-        end = 0;
-        cout << "Not Palindrome\n";
-    }
+    cout << "Array after replacing duplicates with 0: ";
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
 
     return 0;
 }
