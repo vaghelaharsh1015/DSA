@@ -6,11 +6,17 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
-  int arr[] = {16 , 17 , 4 , 3 , 5 , 2};
+  int arr[] = {16, 17, 4, 3, 5, 2};
 
   int n = 6;
-  
-  return 0;
+
+  for (int i = 0; i < n; i++)
+  {
+    
+  }
+
+    return 0;
 }
