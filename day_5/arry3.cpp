@@ -15,7 +15,7 @@ int main()
     int target = 6;
 
     int closest = arr[0];
-
+  
     int minDiff = abs(arr[0] - target);
 
   for(int i = 1; i < n; i++){
