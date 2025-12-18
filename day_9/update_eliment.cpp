@@ -10,15 +10,25 @@ int main()
 
   int indexnum;
 
+  int num;
+
   cout << " enter the indexnum beetven 0 to 5:" << endl;
   cin >> indexnum;
 
   for(int i = 0 ; i < n ; i++)
   {
     if(indexnum==i){
-       cout<<"thise is you index value:"<<arr[i];
+       cout<<"what do you have store the value:"<<endl;
+       cin >> num;
+
+       arr[i]=num;
     }
   }
+  for(int i=0;i<n;i++)
+  {
+    cout<<arr[i]<<" ";
+  }
+  
   return 0;
 
-}
+} 
