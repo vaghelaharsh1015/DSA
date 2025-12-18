@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-  int arr[] = { 10,15,8,6,5};
+  int arr[] = {10,15,8,6,5};
 
   int n=5;
 
@@ -14,7 +14,8 @@ int main()
 
     int j=i-1;
 
-    while(j>=0 && arr[j]<key){
+    while(j>=0 && arr[j]<key)
+    {
       arr[j+1]=arr[j];
       j--;
     }
