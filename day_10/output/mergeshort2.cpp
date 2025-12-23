@@ -3,8 +3,8 @@
 using namespace std;
 
 void merge(int arr[] , int left , int mid , int right){
-  int n1 = mid - left + 1; 
-  int n2 = right - mid;
+  int n1 = mid - left + 1; // 4
+  int n2 = right - mid;   // 3
 
   int L[n1] , R[n2];
 
@@ -18,8 +18,8 @@ void merge(int arr[] , int left , int mid , int right){
 
   int i = 0 , j = 0 , k = left;
 
-  while(i < n1 && j < n2){
-    if(L[i] >= R[j]){
+  while(i < 4 && j < 3){
+    if(L[i] <= R[j]){
       arr[k] = L[i];
       i++;
     }else{
@@ -43,7 +43,8 @@ void merge(int arr[] , int left , int mid , int right){
 }
 
 
-void mergeSort(int arr[] , int left , int right){
+void mergeSort(int arr[] , int left , int right)
+{
   if(left < right){
     int mid = left + (right - left) / 2;
 

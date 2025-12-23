@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
   
-    int arr[7] = {10, 15, 7, 8, 22, 26}; 
+    int arr[] = {10, 15, 7, 8, 22, 26}; 
     int n = 6; 
     int indexnum;
     int num;
@@ -18,7 +18,6 @@ int main() {
         for (int i = n; i > indexnum; i--) {
             arr[i] = arr[i - 1];
         }
-
         arr[indexnum] = num;
         n++; 
 
