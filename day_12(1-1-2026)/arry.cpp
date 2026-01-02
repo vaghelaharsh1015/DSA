@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+  int arr[15] = { 10 , 20 , 30 , 40 , 50 };
+
+  int n = 5;
+
+  int pos = 2;
+
+  int value = 1015;
+
+  for(int i = n; i > pos ; i--){
+    arr[i] = arr[i - 1];        // 10 20 1015 30 40
+  }
+
+  arr[pos] = value ;
+
+  n++;    // 10 20 1015 30 40 50
+
+  for(int i = 0; i < n ; i++)
+  {
+    cout << arr[i] <<" ";
+  }
+
+  return 0;
+}

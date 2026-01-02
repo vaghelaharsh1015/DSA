@@ -2,11 +2,11 @@
 
 using namespace std;
 
-template <class t>
+template <class k>
 
-void swaping(t &a, t &b)
+void swaping(k &a, k &b)
 {
-    t temp;
+    k temp;
 
     temp = a;
     a = b;
@@ -15,7 +15,7 @@ void swaping(t &a, t &b)
 
 int main()
 {
-    float k = 10.10;
+    float k = 10;
     float h = 15;
 
     cout << "before swaping:\n" << "k value: " << k << "\t h value:" << h << endl;
