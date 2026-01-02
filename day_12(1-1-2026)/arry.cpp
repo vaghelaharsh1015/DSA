@@ -18,7 +18,7 @@ int main(){
 
   arr[pos] = value ;
 
-  n++;
+  n++;    // 10 20 1015 30 40 50
 
   for(int i = 0; i < n ; i++)
   {
