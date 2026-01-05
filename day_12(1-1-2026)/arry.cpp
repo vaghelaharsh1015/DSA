@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-  int arr[15] = { 10 , 20 , 30 , 40 , 50 };
+  int arr[15] = { 10 , 20 , 30 , 40 , 50};
 
   int n = 5;
 
@@ -26,4 +26,5 @@ int main(){
   }
 
   return 0;
+
 }
