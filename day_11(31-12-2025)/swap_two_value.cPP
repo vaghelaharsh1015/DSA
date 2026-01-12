@@ -16,11 +16,11 @@ int main()
     int k=10;
     int h=15;
 
-    cout<<"befor swap"<<" k value: \n"<< k << " h value :"<< h << endl;
+    cout<<"befor swap"<<" k value: "<< k << "\n h value :"<< h << endl;
 
     swaping(k,h);
 
-    cout<<"After  swap"<<" k value: "<< k << " h value :"<< h << endl;
+    cout<<"After  swap"<<" k value: "<< k << "\n h value :"<< h << endl;
 
     return 0;
 }

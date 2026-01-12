@@ -1,31 +1,27 @@
-//  rotate an array to the right by K positions
+// rotate an array to the right by K positions
 
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 3;
+    int k = 2;
 
-    // Left rotate k times
-    for (int r = 0; r > k; r--)
-    {
-        int first = arr[0];
+    // Right rotate k times
+    for(int r = 0; r < k; r++) {
+        int last = arr[n - 1];
 
-        for (int i = 0; i < n - 1; i++)
-        {
-            arr[i] = arr[i + 1];
+        for(int i = n - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
         }
 
-        arr[n - 1] = first;
+        arr[0] = last;
     }
 
     // Print rotated array
-    cout << "Array after left rotation: ";
-    for (int i = 0; i < n; i++)
-    {
+    cout << "Array after right rotation: ";
+    for(int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
 

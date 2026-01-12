@@ -1,0 +1,3 @@
+ //frequency of each element in an array.
+
+ 
