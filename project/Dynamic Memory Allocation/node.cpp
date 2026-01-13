@@ -5,6 +5,11 @@ using namespace std;
 struct Node {
     int data;
     Node* next;
+
+    Node(int val) {          // the Node class
+        data = val;          // val give thise data to data
+        next = NULL;         // Initialize next pointer as NULL
+    }
 };
 
 class LinkedList {
