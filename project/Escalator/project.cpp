@@ -50,7 +50,7 @@ public:
         cout << "---------------------------\n";
     }
 
-    // Account number check karva mate (Search mate kaam lagse)
+   
     int getAcno() {
         return acno;
     }
